@@ -2,75 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles for FintechOS Value Consultant */
-
+/* Simple, clean styles */
 .App {
   min-height: 100vh;
 }
 
-/* Enhanced form styling */
 input[type="number"], 
-input[type="text"], 
-select {
-  @apply transition-all duration-200 ease-in-out;
+input[type="text"] {
+  transition: all 0.2s ease-in-out;
 }
 
 input[type="number"]:focus, 
-input[type="text"]:focus, 
-select:focus {
-  @apply transform scale-105 shadow-lg border-blue-500 ring-2 ring-blue-200;
+input[type="text"]:focus {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effects for cards */
-.bg-white {
-  @apply transition-all duration-200 ease-in-out;
-}
-
-.bg-white:hover {
-  @apply shadow-xl transform translate-y-[-2px];
-}
-
-/* Enhanced button styles */
 button {
-  @apply transition-all duration-200 ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 button:hover {
-  @apply transform scale-105 shadow-lg;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 3px;
-}
-
-/* Loading animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-out;
-}
-
-/* Professional shadows */
-.shadow-banking {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-/* Responsive design */
-@media (max-width: 640px) {
-  .responsive-text {
-    font-size: 0.875rem;
-  }
+  transform: scale(1.05);
 }
